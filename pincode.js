@@ -1,4 +1,4 @@
-const pinRegex = RegExp("^([1-9])(\\S){5}$");
+const pinRegex = RegExp("^([1-9])(\\S){4}[0-9]$");
 
 function pinCodeTest(pinCode){
     if(pinRegex.test(pinCode))console.log("Valid Pin Code");
@@ -12,7 +12,7 @@ try{
 }
 
 try{
-    pinCodeTest("a40088");
+    pinCodeTest("a4008b");
 }catch(e){
     console.error(e);
 }
