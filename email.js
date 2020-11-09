@@ -1,4 +1,4 @@
-const emailRegex = RegExp("^abc[.a-zA-Z0-9]*(@bridgelabz).*$");
+const emailRegex = RegExp("^abc[.a-zA-Z0-9]*(@bridgelabz.co).*$");
 
 function emailTest(email){
     if(emailRegex.test(email))console.log("Valid Email");
@@ -6,13 +6,13 @@ function emailTest(email){
 }
 
 try{
-    emailTest("abc@bridgelabz.com");
+    emailTest("abc@bridgelabz.co");
 }catch(e){
     console.error(e);
 }
 
 try{
-    emailTest("abc@gmail.com");
+    emailTest("abc@bridgelabz.in");
 }catch(e){
     console.error(e);
 }
